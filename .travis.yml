@@ -1,0 +1,13 @@
+language: python
+python:
+- '3.6'
+script:
+- python setup.py test
+deploy:
+  provider: pypi
+  user: mathiasbrito
+  password:
+    secure: Wa51DN6NkJbuXNRXcK83orjMheSvBGIqGvvs8155mNOhxW2gZCu8Xp2LWLiRWsbmhOiJGzUxYtVGthOQDXvaSh3sTpUw44sI7G4SOqLoE4UCh0QzQKTCKwFZdhz8yMNnrsWhLpqFQjKWlIrtdlzsR2bAGUhQzaMkemQauixlFLVWkekbJ4e9bB4tdnzUjpUdTuBypO+MosK2ByKVHTZ59RLjr3+J4+KT3MO4Tu2OrD2SrImW+1ycTkqvRsnZSKVBcfnzqN1INgnFAhYd7rvryCHr3OPngj1f/c2o4tLDJlQttcRsXTPHOQRufD8E05WceOUn8q7sUWSE8hzAlVCpEdonIqx75WwNBY4zPySGcXQ+qEHsFrjIU0ZWcnY5REV3NhGZjNCWMPLLJMc6OYkRt5gZC1XGPO76Db26scWwsCClF9EtgMMWKcSQKnDYCtqYyoCyKq/uCAmBeuO3g0UTkeEVl/MsP+Plwf1ik3JxBcStEJv0AHTM7n80Vsq0M+tNcC9aVqzrvvwGkD9paicW26hdHioNVu4V6ibP4wEJ4ILO2He9pnBEPTWS1zvQRN6XhLJWFouDgoBct3I4HOufRO88AGuXebCFUQ6sxJoIgjgztST11bgD5tAK4v2zzJGvHnMU1YuR1DBVEkE/IQnA+Xu2SiGlxqULuZrwH9NiLmY=
+  on:
+    branch: master
+    python: 3.6
